@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+    
+  <meta charset="UTF-8">
+  <title>BTN Maker</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href='#' rel='stylesheet' type='text/css'>
+<center>
+  <font color="blue" size="5px" ><b>CSS Button Maker</b></font><br>
+  
+  <div style="border:3px dotted green ;padding:0px 0px 15" ; class="dv"  >
+   <i> <p>Button Preview:</p> </i>
+    <div id="StyleD">
+    
+      <button class=""  id="StyleB" style="background-color:silver;max-width:100%;box-sizing:border-box"> <a id="StyleBA" >Button </a></button>
+    
+    </div>
+   
+  </div>
+  <input class="btxt"  placeholder="Button Text" onchange="StyleType(this.value)"> 
+  <br>
+  
+  <br> Font Size:
+  <br>
+  <input class="slider"  type="range" min="10" max="90" value="10"   onchange="StyleFontSize(this.value)"> 
+  <br>
+  <br> Padding At Sides:
+  <br>
+  <input class="slider"  type="range" min="0" max="80" value="0"   onchange="StylePaddingS(this.value)"> 
+  
+  <br><br> Padding At Top/Bottom:
+  <br>
+  <input class="slider"  type="range" min="0" max="90" value="0"   onchange="StylePaddingT(this.value)"> 
+  
+  <br><br> Border Radius:
+  <br>
+  <input class="slider"  type="range" min="0" max="100" value="0"   onchange="StyleBorderR(this.value)"> 
+  
+  <br><br> Border Size:
+  <br>
+  <input class="slider"  type="range" min="0" max="20" value="0"   onchange="StyleBorderS(this.value)"> 
+  
+  <br><br>&nbsp; &nbsp; &nbsp;Border: &nbsp; &nbsp;
+  <input class="color"  type="color" min="0" max="100" value="0"   onclick="StyleBorderC(this.value)" onchange="StyleBorderC(this.value)"> 
+  <br> Background:
+  <input class="color"  type="color" min="0" max="100" value="0"   onclick="StyleBackground(this.value)" onchange="StyleBackground(this.value)"> 
+  <br> Font Colour:
+  <input class="color"  type="color" min="0" max="100" value="0"   onclick="StyleColor(this.value)" onchange="StyleColor(this.value)"> 
+  <br>
+  
+  <button id="StyleGB" style="background-color: rgb(0, 255, 0); max-width: 100%; box-sizing: border-box; font-size: 26px; padding: 6px 0px; border-radius: 32%; color: rgb(255, 255, 255); border-color: rgb(255, 0, 255); border-width: 13px;"  onclick="StyleGenerate()" >View Code</button>
+  
+  
+  
+  <p>Copy This:</p>
+  <textarea class="txt"  id="StyleG" style="width:95%;height:100px" placeholder=" ........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................... " ></textarea>
+<p class="p"  >KH THORN BUNTHY </p> <font color="lime" >[TBT]</font>
+
+</center>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+
+
+</body>
+</html>
